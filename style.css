@@ -1,0 +1,281 @@
+
+/*General*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+  	font-family: Arial, Helvetica, sans-serif;
+  	color: #333;
+  	font-size: 15px;
+  	line-height: 1.5;
+	background-color: linen;
+	}
+.container {
+    width: 90%; /*para que sea reponsive*/
+    margin: auto; /*para que se ubique en el centro*/
+    overflow: hidden; /*para que si hay overflow no aparezca el scroll*/
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/*Header con navbar*/
+#header {
+    background: #f4f4f4;
+    position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 80px;
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+	z-index: 2;
+		}
+.logo {
+	display: flex;
+}
+#header-img {
+	width: 100px;
+	height: auto;
+    margin-left:0px;
+    margin-right: 20px;
+		}
+#header h1 {
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+		}
+ul {
+	display: flex;
+	list-style: none;
+}
+li {
+	padding-top: 30px;
+}
+.nav-link {
+    margin-top: 30px;
+    margin-right:  20px;
+    align-items: center;
+		}
+
+/*Form con email*/
+
+#form {
+	position: relative;
+	top: 100px;
+	left: 0px;
+	margin: auto;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#form h1 {
+	margin-bottom: 30px;
+}
+#email {
+	margin-bottom: 30px;
+	height: 50px;
+	width: 300px;
+    background-color: #f4f4f4;
+			}
+#submit{
+	margin: auto;
+	padding: 10px;
+	height: 50px;
+    width: 200px;
+	background-color: #f4f4f4;
+	margin-bottom: 10px;
+}
+/*Features*/
+
+#features {
+	position:relative;
+    top: 130px;
+    left: 0px;
+	margin: auto;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+#imagen {
+	width: 70px;
+	margin-top: 30px;
+		}
+#premium {
+	font-size: 14px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 70px;
+	width:60%;
+	}
+#box1 {
+	width: 10%;
+	align-items:center;
+	padding-top: 0px;
+	}
+#box2 {
+	width: 90%;
+	align-items: center;
+	padding-top: 10px;
+	padding-left: 100px;
+	}
+
+/*How it works video*/
+
+#video {
+	position: relative;
+	top: 100px;
+	display:block;
+	margin: auto;
+	text-align: center;
+}
+
+
+/*Pricing*/
+
+.trombones {
+    position: relative;
+    display: flex;
+	flex-direction: row;
+	top: 150px;
+	width: 80%;
+    justify-content:space-between;
+    margin: auto;/*lo centra*/
+}
+
+#tenor, #bass, #valve {
+	width: 300px;
+	border: 1px solid black;
+	font-family:'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+		}
+
+
+#head {
+    background-color: #f4f4f4;
+    font-size: 25px;
+}
+
+#cuerpo {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	padding-left: 10%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+#precio {
+    font-size: 20px;
+    font-weight: bold;
+}
+#select {
+    font-size: 20px;
+    font-weight:bold;
+    background-color: #f4f4f4;
+}
+
+td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+		}
+
+input {
+	text-align: center;
+		}
+
+/*Footer*/
+footer {
+	position: relative;
+	top: 150px;
+	margin-top: 20px;
+	width: 100%;
+	background-color: #f4f4f4;
+	height: 80px;
+	padding-bottom: 10px;
+}
+
+.privacyetc {
+	padding-top:10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.inter {
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+.copy p {
+	padding-right: 10px;
+	text-align:right;
+}
+
+@media(max-width: 1300px) {
+	#trombones {
+		width: 100%;
+	}
+	#tenor, #valve, #bass {
+		width: 250px;
+	}
+}
+
+@media(max-width: 800px) {
+	#header-img {
+		width: 40px;
+	}
+	#header h1 {
+		padding-top: 30px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#nav-bar {
+		padding-bottom: 30px;
+	}
+	#nav-link {
+		padding-top: 0px;
+	}
+	#form h1 {
+		font-size: 20px;
+	}
+	#premium {
+		font-size: 12px;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.box2 {
+		padding-left: 0px;
+	}
+	#video {
+		width: 90%;
+		margin: 30px auto;
+		text-align: center;
+	}
+	.trombones {
+		position: relative;
+		top: 100px;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	#tenor, #valve, #bass, #cuerpo, #head {
+		font-size: 15px;
+		font-weight: bold;
+		width: 300px;;
+	}
+	#tenor, #bass {
+		margin-bottom: 5px;
+	}
+	footer {
+		top: 100px;
+	}
